@@ -62,6 +62,30 @@ padding: 2em;
   transform: rotateX(180deg);
 }
 
+ input.answer.correct {
+  border: 3px solid #4caf50 !important;
+  box-shadow: 0 0 12px rgba(76, 175, 80, 0.8) !important;
+  outline: none;
+}
+
+input.answer.wrong {
+  border: 3px solid #ff4d4d !important;
+  box-shadow: 0 0 12px rgba(255, 77, 77, 0.8) !important;
+  outline: none;
+}
+
+.feedback-container{
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 5px;
+  border: 3px solid transparent;
+}
+
+.guessing{
+  font-weight: bolder;
+  background-color: #f8ebdb80;
+}
+
 button{
   border-radius: 8px;
   border: 1px solid transparent;
@@ -71,6 +95,11 @@ button{
   background: #1a1a1a;
   cursor: pointer;
   transition: border-color .25s;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #555;
 }
 
 :root {
